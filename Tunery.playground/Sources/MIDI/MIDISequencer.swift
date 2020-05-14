@@ -1,6 +1,6 @@
 //
 //  MIDISequencer.swift
-//  wwdc2020
+//  Tunery
 //
 //  Created by Wendy Liga on 13/05/20.
 //  Copyright © 2020 Wendy Liga. All rights reserved.
