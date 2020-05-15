@@ -172,10 +172,6 @@ public final class MainViewController: UIViewController {
     private func validateScrollIndicator() {
         scrollIndicator.isHidden = scrollView.contentSize.height < scrollView.frame.height
     }
-    
-    private func validateRemoveSheetButton() {
-//        menuView.removeSheetButton.isEnabled = noteSheets.count == 1 ? false : true
-    }
 }
 
 extension MainViewController: ScrollIndicatorDelegate {

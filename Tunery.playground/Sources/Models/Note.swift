@@ -132,7 +132,6 @@ extension Note {
     func numberOftranspose(to note: Note) -> Int {
         let direction: Transpose = self.frequency > note.frequency ? .down : .up
         
-        
         if octave == note.octave && direction == .down {
             var counter = Int.init()
             

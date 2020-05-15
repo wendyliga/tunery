@@ -34,8 +34,6 @@ protocol NoteViewGestureRecognizer: AnyObject {
     func didTap(_ view: NoteView)
 }
 
-// C -> D -> E -> F -> G -> A -> B
-
 final class NoteView: UIView {
     // MARK: - Interface
     

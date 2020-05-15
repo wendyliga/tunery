@@ -24,7 +24,6 @@ protocol ScrollIndicatorDelegate: AnyObject {
      */
     func scrollToBottom()
     
-    
     /**
      How far offset scroll content size compare to scroll frame.
      */
