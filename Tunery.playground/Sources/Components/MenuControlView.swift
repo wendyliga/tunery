@@ -38,11 +38,6 @@ protocol MenuDelegate: AnyObject {
      When Template triggered
      */
     func template()
-    
-    /**
-     When Random triggered
-     */
-    func random()
 }
 
 final class MenuControlView: UIView {
@@ -180,9 +175,5 @@ final class MenuControlView: UIView {
     @objc
     private func template() {
         delegate?.template()
-    }
-    
-    @objc func random() {
-        delegate?.random()
     }
 }

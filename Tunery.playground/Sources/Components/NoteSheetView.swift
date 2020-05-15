@@ -241,7 +241,7 @@ extension NoteSheetView: NoteViewGestureRecognizer {
         let newContant = (previousConstant + position.y).clamp(-maxYTranslation ... maxYTranslation)
         
         // animate note that being panned
-        updateNotesAnchorAt(index: index, newConstant: newContant)
+        updateNotesAnchorAt(index: index, newConstant: newContant, willPlaySound: false)
     }
     
     func stopPan(_ view: NoteView, at position: CGPoint) {
@@ -256,7 +256,7 @@ extension NoteSheetView: NoteViewGestureRecognizer {
         let snapToTransposeConstant = estimatedTransposeCount * transposeSpacing
         
         // animate it
-        updateNotesAnchorAt(index: index, newConstant: snapToTransposeConstant)
+        updateNotesAnchorAt(index: index, newConstant: snapToTransposeConstant, willPlaySound: false)
     }
     
     func didTap(_ view: NoteView) {

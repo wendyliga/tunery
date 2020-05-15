@@ -291,7 +291,7 @@ final class AdjustViewController: UIViewController {
     
     private func validateBPMAction() {
         decreaseBPMButton.isEnabled = bpm <= 85 ? false : true
-        increaseBPMButton.isEnabled = bpm >= 185 ? false : true
+        increaseBPMButton.isEnabled = bpm >= 210 ? false : true
     }
     
     @objc
