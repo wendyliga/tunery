@@ -139,8 +139,6 @@ public final class MainViewController: UIViewController {
             stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0)
         ])
-        
-        validateRemoveSheetButton()
     }
     
     private func showAlertInfo(title: String, message: String) {
@@ -217,7 +215,6 @@ extension MainViewController: MenuDelegate {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
                     self?.validateScrollIndicator()
                     self?.scrollIndicator.refreshScreenOffset()
-                    self?.validateRemoveSheetButton()
                 }
             })
             saveOptionAlertController.addAction(jingle)
@@ -284,7 +281,6 @@ extension MainViewController: MenuDelegate {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
                 self?.validateScrollIndicator()
                 self?.scrollIndicator.refreshScreenOffset()
-                self?.validateRemoveSheetButton()
             }
             
             self?.showAlertInfo(title: "Success", message: "Load Success")
@@ -384,7 +380,6 @@ extension MainViewController: AdjustDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.validateScrollIndicator()
             self?.scrollIndicator.refreshScreenOffset()
-            self?.validateRemoveSheetButton()
         }
     }
     
@@ -400,7 +395,6 @@ extension MainViewController: AdjustDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.validateScrollIndicator()
             self?.scrollIndicator.refreshScreenOffset()
-            self?.validateRemoveSheetButton()
         }
     }
     
