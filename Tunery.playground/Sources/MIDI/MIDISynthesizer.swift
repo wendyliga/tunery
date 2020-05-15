@@ -67,7 +67,7 @@ final class MIDISynthesizer {
     }
     
     func play(note: UInt8) {
-        sampler.startNote(note, withVelocity: 120, onChannel: 0)
+        sampler.startNote(note, withVelocity: 100, onChannel: 0)
     }
     
     func changeInstrument(instrument: MIDIInstrument) {
@@ -76,7 +76,7 @@ final class MIDISynthesizer {
 }
 
 func loadSoundBank(sampler: inout AVAudioUnitSampler, instrument: MIDIInstrument) {
-    guard let soundFont = Bundle.main.url(forResource: "TimGM6mb", withExtension: "sf2") else {
+    guard let soundFont = Bundle.main.url(forResource: "Roland_SC-88", withExtension: "sf2") else {
         fatalError("Could not load Sound Bank Resource")
     }
     

@@ -27,7 +27,7 @@ extension Template: CaseIterable {
         switch self {
         case .default:
             return [
-                .C, .D, .E, .F, .G, .A, .B, Note(key: .C, octave: 5, color: nil)
+                .C, .D, .E, .F, .G, .A, .B, Note(key: .C, octave: 5, color: nil), Note(key: .D, octave: 5, color: nil), Note(key: .E, octave: 5, color: nil)
             ]
         case .jingleBell:
             return [
@@ -39,7 +39,7 @@ extension Template: CaseIterable {
                 .E, .E, .E, .none, .E, .E, .E, .none,
                 .E, .G, .C, .D, .E, .none, .none, .none,
                 .F, .F, .F, .none, .F, .E, .E, .none,
-                .G, .G, .E, .D, .C, .none, .none
+                .G, .G, .E, .D, .C, .none, .none,
             ]
         }
     }

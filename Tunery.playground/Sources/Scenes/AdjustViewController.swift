@@ -206,9 +206,10 @@ final class AdjustViewController: UIViewController {
     
     // MARK: - Life Cycle
     
-    init(sheet: Int, bpm: Int) {
+    init(sheet: Int, bpm: Int, instrument: MIDIInstrument) {
         self.sheet = sheet
         self.bpm = bpm
+        self.instrument = instrument
         
         super.init(nibName: nil, bundle: nil)
         

@@ -309,7 +309,7 @@ extension MainViewController: MenuDelegate {
     }
     
     func adjust() {
-        let viewController = AdjustViewController(sheet: noteSheets.count, bpm: bpm)
+        let viewController = AdjustViewController(sheet: noteSheets.count, bpm: bpm, instrument: instrument)
         viewController.delegate = self
         viewController.modalPresentationStyle = .popover
         viewController.preferredContentSize.height = 350

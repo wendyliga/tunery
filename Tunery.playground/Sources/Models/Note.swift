@@ -197,13 +197,13 @@ extension Array where Element == Note {
         zip(self.indices, self).forEach({ (index, value) in
             guard value.key != .none else {
                 midis.append(
-                    MIDINote(note: 120, velocity: 0, channel: 0, time: duration, volume: 0)
+                    MIDINote(note: value.MIDINote, velocity: 0, channel: 0, time: duration, volume: 0)
                 )
 
                 return
             }
 
-            midis.append(.init(note: value.MIDINote, velocity: 120, channel: 0, time: duration, volume: 0.8))
+            midis.append(.init(note: value.MIDINote, velocity: 100, channel: 0, time: duration, volume: 0.8))
         })
 
         return midis
