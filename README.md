@@ -2,8 +2,8 @@
 
 ![Screen Shot 2020-05-18 at 20 59 02](https://user-images.githubusercontent.com/16457495/82221611-6f2bea00-994a-11ea-87e2-c8cb32b9f0b0.jpg)
 
-Tunery is simple Music composer or MIDI creator.
-The Concept is how to easly create music, simple and yet still create a great music.
+Tunery is a simple Music composer or MIDI creator.
+The Concept is how to easily create music, simple and yet still create great music.
 
 Check YouTube for live action [Youtube](https://youtu.be/L17PW6inUzw)
 
